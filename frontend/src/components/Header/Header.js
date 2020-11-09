@@ -1,7 +1,7 @@
 import React from 'react';
 import './Header.css';
 import logo from '../../assets/logo.png';
-import bookshelf from '../../assets/bookshelf.svg'
+import bookshelf from '../../assets/estanteria-dibujo.png'
 
 
 const header = () =>{
@@ -9,7 +9,7 @@ const header = () =>{
         <div className="header">
             <div className="up-line">
                 <img className="logo left-float clear" src={logo} alt="Logo Pancho Libros"/>
-                <img className="bookshelf right-float"  src={bookshelf} alt="bookshelf"/>
+                <img className="bookshelf right-float"  src={bookshelf} alt="Estanteria"/>
             </div>
             <div className="low-line clear"></div>
         </div>
