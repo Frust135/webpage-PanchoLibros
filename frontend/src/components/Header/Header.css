@@ -1,0 +1,40 @@
+.header{
+    background-color: #D5C68B;
+}
+.low-line{
+    background-color: #DB9E05;
+    height: 24px;
+}
+.clear{
+    clear: both;
+}
+
+.left-float{
+    float: left;
+    width: 30%;
+}
+.right-float{
+    float: right;
+}
+
+.logo{
+    width: 300px;
+    padding: 16px;
+}
+.bookshelf{
+    width: 60px;
+    padding: 16px;
+}
+
+/* 
+    VISTA PARA TABLETS
+*/
+@media (max-width: 1024px){
+    
+}
+/* 
+    VISTA PARA CELULARES
+*/
+@media (max-width: 767px){
+
+}
