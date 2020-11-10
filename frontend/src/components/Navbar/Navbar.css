@@ -70,57 +70,7 @@ li, a{
     VISTA PARA EL NAVBAR
     (EL NAVBAR COLAPSA A LOS 1200PX, POR ESTO EL CAMBIO)
 */
-@media (max-width: 1200px){
-    .nav-links li a{
-        padding-left: 2px;
-        font-size: 1.4rem;
-    }
-    .nav-links li{
-        padding-left: 2px;
-        font-size: 1.4rem;
-    }
-    .navbar{
-        width: 98%;
-        margin: 30px auto auto auto;
-    }
 
-}
-/* 
-    VISTA PARA TABLETS
-*/
-@media (max-width: 1024px){
-    .compra p{
-        display: none;
-    }
-    #logo{
-        width: 50px;
-        padding-top: 8px;
-        padding-right: 16px;
-    }
-    .nav-links li a{
-        font-size: 1.2rem;
-    }
-    .nav-links li{
-        font-size: 1.2rem;
-    }
-    .input-navbar{
-        width: 60%;
-        padding: 5px 20px 5px 40px;
-        font-size: 1rem;
-    }
-}
-/* 
-    VISTA PARA CELULARES
-*/
-@media (max-width: 756px){
-    #busqueda{
-        display: none;
-    }
-    .input-navbar{
-        display: block;
-    }
-
-}
 
 
 

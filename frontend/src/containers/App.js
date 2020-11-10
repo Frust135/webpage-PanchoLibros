@@ -15,6 +15,8 @@ function App() {
         />
         <h1>Pancho Libros</h1>
       </header>
+      <body>
+      </body>
     </div>
   );
 }

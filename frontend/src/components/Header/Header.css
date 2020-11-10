@@ -39,18 +39,21 @@
         width: 300px;
         padding-top: 5px;
     }
+    
 }
 /* 
     VISTA PARA CELULARES
 */
 @media (max-width: 650px){
-    .logo{
-        margin-left: auto;
-        margin-right: auto;
-        width: 300px;
+    .header{
+        margin: 0 auto;
+        display: block;
     }
     .bookshelf{
         display: none;
+    }
+    .left-float{
+        float: none;
     }
 
 }
