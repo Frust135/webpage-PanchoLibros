@@ -1,7 +1,7 @@
 import React from 'react';
 import './Header.css';
-import logo from '../../assets/logo.png';
-import bookshelf from '../../assets/estanteria-dibujo.png'
+import logo from '../../assets/Header/logo.png';
+import bookshelf from '../../assets/Header/estanteria-dibujo.png'
 
 
 const header = () =>{

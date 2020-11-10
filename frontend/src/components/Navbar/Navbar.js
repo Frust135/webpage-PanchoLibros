@@ -1,6 +1,7 @@
 import React from 'react';
 import './Navbar.css';
-import bookshelf from '../../assets/bookshelf.svg'
+import bookshelf from '../../assets/Header/bookshelf.svg';
+import burger from '../../assets/Header/burger.svg'
 
 const navbar = (props) =>{
     return(
@@ -8,7 +9,8 @@ const navbar = (props) =>{
             <div>
                 <nav>
                     <ul className="nav-links">
-                        <li>Búsqueda</li>
+                        <img className="burger-menu" src={burger} alt="Burger menú"/>
+                        <li id="busqueda">Búsqueda</li>
                         <li><input className="input-navbar" type="text" placeholder="Búsqueda..."/></li>
                         <li><a href={props.novedades}>Novedades</a></li>
                         <li><a href={props.autores}>Autores</a></li>

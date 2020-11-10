@@ -20,21 +20,37 @@
 .logo{
     width: 400px;
     padding: 16px;
+    transition: all 0.3s ease 0s;
 }
 .bookshelf{
     width: 400px;
     padding-right: 16px;
+    transition: all 0.3s ease 0s;
 }
 
 /* 
     VISTA PARA TABLETS
 */
 @media (max-width: 1024px){
-    
+    .logo{
+        width: 300px;
+    }
+    .bookshelf{
+        width: 300px;
+        padding-top: 5px;
+    }
 }
 /* 
     VISTA PARA CELULARES
 */
-@media (max-width: 767px){
+@media (max-width: 650px){
+    .logo{
+        margin-left: auto;
+        margin-right: auto;
+        width: 300px;
+    }
+    .bookshelf{
+        display: none;
+    }
 
 }
