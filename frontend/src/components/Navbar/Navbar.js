@@ -6,7 +6,7 @@ import burger from '../../assets/Header/burger.svg'
 const navbar = (props) =>{
     return(
         <div className="navbar">
-            <div>
+            <div className="navbar-leftside">
                 <nav>
                     <ul className="nav-links">
                         <img className="burger-menu" src={burger} alt="Burger menú"/>
