@@ -29,9 +29,12 @@ const sidebar = (props) =>{
             <img className="logo_redes" src={logo_facebook} alt="Logo facebook">
             </img>
         </a>
-        <div className="Borde izquierdo">
-            <img className="imagen_personalizada" src={imagen_personalizada} alt="Imagen de la libreria">
-            </img>
+        <div className="borde_izquierdo">
+            <img className="imagen_personalizada" src={imagen_personalizada} alt="Imagen de la libreria"></img>
+            <p className="clear" 
+            >
+                "35 años... en este oficio tan maravilloso una aventura un sueño que es un libro"
+            </p>
         </div>
         </div>
     );
