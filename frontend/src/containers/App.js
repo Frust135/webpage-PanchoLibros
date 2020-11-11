@@ -1,6 +1,7 @@
 import './App.css';
 import Header from '../components/Header/Header';
 import Navbar from '../components/Navbar/Navbar';
+import Sidebar from '../components/Sidebar/Sidebar';
 
 function App() {
   return (
@@ -13,9 +14,12 @@ function App() {
           categorias={'#'}
           carrito={'#'}
         />
-        <h1>Pancho Libros</h1>
+        
       </header>
       <body>
+        <Sidebar>
+
+        </Sidebar>
       </body>
     </div>
   );
