@@ -22,6 +22,7 @@
     padding: 0px 2rem 0px 1rem;
     font-size: 1.1rem;
     color: #653718;
+    text-align: center;
 }
 
 /*
@@ -46,7 +47,7 @@ li, a{
     padding-left: 16px;
 }
 
-.nav-links li a:hover{
+.nav-links li a:hover, .nav-links-mobile li a:hover{
     color: white;
 }
 
@@ -66,6 +67,31 @@ li, a{
 
 .burger-menu{
     display:none;
+}
+/*
+    BURGER MENU
+*/
+
+.navbar-mobile{
+    display: none;
+}
+.nav-links-mobile{
+    margin-top: -30px;
+    padding: 0px;
+    background-color: #D2A434 ;
+    text-align: center;
+    transition: all 0.3s ease 0s;
+
+}
+
+.nav-links-mobile li a{
+    padding: .5rem 0rem .5rem 0rem;
+    transition: all 0.3s ease 0s;
+    text-decoration: none;
+}
+hr{
+    color: #271B16;
+    
 }
 /*
     VISTA A 1200PX
@@ -115,11 +141,20 @@ li, a{
     }
     
     /*CONFIGURACIÓN DEL BURGER MENU*/
+    .navbar-mobile{
+        display: block;
+    }
     .burger-menu:hover{
         transition: filter 0.2s ease;
-        filter: brightness(0) invert(1)
-        
+        filter: brightness(0) invert(1);
+        cursor: pointer;
     }
+
+    .nav-links-mobile{
+        transition: all 0.3s ease 0s;
+        width: 400px;
+    }
+    
 }
 
 /*
@@ -128,6 +163,12 @@ li, a{
 @media (max-width: 650px){
     .input-navbar{
         width: 90%;
+    }
+    .nav-links-mobile{
+        width: 300px;
+    }
+    .nav-links-mobile li a{
+        font-size: 1.4rem;
     }
 }
 /*
@@ -146,6 +187,8 @@ li, a{
         margin-right: -40px;
         margin-left: -20px;
     }
+
+    
 }
 
 

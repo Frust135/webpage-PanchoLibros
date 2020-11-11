@@ -6,7 +6,7 @@ import Sidebar from '../components/Sidebar/Sidebar';
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
+      <div className="App-header">
         <Header/>
         <Navbar
           novedades={'#'} 
@@ -15,13 +15,13 @@ function App() {
           carrito={'#'}
         />
         
-      </header>
-      <body>
+      </div>
+      <div className="App-body">
         <Sidebar>
 
         </Sidebar>
         <br/>
-      </body>
+      </div>
     </div>
   );
 }

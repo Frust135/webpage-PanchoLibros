@@ -1,15 +1,19 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './Navbar.css';
 import bookshelf from '../../assets/Header/bookshelf.svg';
 import burger from '../../assets/Header/burger.svg'
 
-const navbar = (props) =>{
+const Navbar = (props) =>{
+    const [open, setOpen] = useState(false);
+
     return(
-        <div className="navbar">
+        <div>
+        <div className="navbar"> 
             <div className="navbar-leftside">
                 <nav>
                     <ul className="nav-links">
-                        <img className="burger-menu" src={burger} alt="Burger menú"/>
+                        <img onClick={() => setOpen(!open)} 
+                        className="burger-menu" src={burger} alt="Burger menú"/>
                         <li id="busqueda">Búsqueda</li>
                         <li><input className="input-navbar" type="text" placeholder="Búsqueda..."/></li>
                         <li><a href={props.novedades}>Novedades</a></li>
@@ -18,12 +22,29 @@ const navbar = (props) =>{
                     </ul>
                 </nav>
             </div>
+
             <div className="compra">
                 <a href={props.carrito}><img src={bookshelf} id="logo" alt="Bookshelf"/></a>
                 <p>¡Añade un libro a tu <br/> estantería!</p> 
-            </div>        
+            </div>  
+
+        </div>
+
+        <div className="navbar-mobile">
+            <ul className="nav-links-mobile" 
+            style={{transform: open ? "translateX(0px)" : "translateX(-1000px)"}}>
+                <hr/>
+                <li><a href={props.novedades}>Novedades</a></li>
+                <hr/>
+                <li><a href={props.autores}>Autores</a></li>
+                <hr/>
+                <li><a href={props.categorias}>Categorias</a></li>
+                <hr/>
+            </ul>
+        </div>
+
         </div>
     );
 };
 
-export default navbar;
+export default Navbar;
