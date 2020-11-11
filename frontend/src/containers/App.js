@@ -20,6 +20,7 @@ function App() {
         <Sidebar>
 
         </Sidebar>
+        <br/>
       </body>
     </div>
   );

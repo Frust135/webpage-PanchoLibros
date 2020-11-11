@@ -133,7 +133,7 @@ li, a{
 /*
     VISTA PARA CELULARES MUY PEQUEÑOS
 */
-@media (max-width: 450px){
+@media (max-width: 460px){
     .input-navbar{
         width: 60%;
         margin-left: -40px;
