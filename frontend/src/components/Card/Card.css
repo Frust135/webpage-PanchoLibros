@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap');
+/*
+    CARTA
+*/
+.card{
+    width: 100%;
+    position: relative;
+}
+/*
+    IMAGENES
+*/
+.card-above{
+    background-color: #E3CCA3;
+    border-radius: 10px;
+    width: 20%;
+    height: 430px;
+    margin: 0 auto;
+    position: absolute;
+    left: 12%;
+    z-index: 10;
+    box-shadow: 4px 0px 20px gray;
+}
+.card-above #principal{
+    padding-top: 2rem;
+    width: 170px;
+    display: block;
+    margin: auto;
+}
+.little-image{
+    cursor: pointer;
+    border: 1px solid black;
+    margin: 1rem .5rem 0rem .5rem;
+    padding: 0rem 1rem 0rem 1rem;
+    width: 60px;
+    background-color: white;
+}
+/*
+    TEXTO
+*/
+.card-text{
+    background-color: white;
+    width: 50%;
+    margin: 0 auto;
+    padding: 20px 100px 20px 200px;
+    border-radius: 10px;
+    position: absolute;
+    left: 21%;
+    top: 50px;
+}
+.card-text p{
+    text-align: center;
+    font-family: 'Libre Baskerville', serif;
+    color: #525252;
+}
+
+.card-text hr{
+    width: 40%;
+    border: 1px solid #808080;
+    border-radius: 100%;
+}
+
+#titulo{
+    font-size: 1.7rem;
+    margin-bottom: 0;
+}
+#autor{
+    font-size: 1rem;
+}
+#descripcion{
+    font-size: .9rem;
+}
+
+#precio{
+    font-size: 1.7rem;
+    margin-bottom: 1rem;
+}
+/*
+    BOTÓN
+*/
+
+
+#compra{
+
+    width: 250px;
+    height: 40px;
+    font-family: 'Libre Baskerville', serif;
+    font-size: 1rem;
+    background-color: #DB9E05;
+    border-radius: 40px;
+}
