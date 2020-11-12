@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap');
 .book{
-    width: 33%;
+    width: 25%;
     margin: 0 auto;
     padding-top: 1rem;
     float: left;
@@ -8,6 +8,7 @@
 .book img{
     border: 2px solid black;
     padding: 0rem 1rem 0rem 1rem;
+    width: 170px;
 }
 .book p{
     text-align: center;
@@ -18,13 +19,13 @@
     margin: 0;
 }
 .book-price p{
-    padding: 1rem;
+    padding: .9rem;
     margin: 0;
 }
 #autor{
     font-size: .9rem;
 }
 .semi-bold{
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     font-weight: 400;
 }
