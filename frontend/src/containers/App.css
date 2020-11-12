@@ -1,4 +1,19 @@
 .App {
   text-align: center;
   background-image: url(../assets/Body/background.png);
+  clear: both;
+}
+
+.body{
+  background-color: white;
+  border-radius: 10px;
+  width: 70%;
+  float: right;
+  margin-right: 4%;
+  height: 800px;
+}
+
+.sidebar{
+  display: inline-block;
+  left: 0px;
 }

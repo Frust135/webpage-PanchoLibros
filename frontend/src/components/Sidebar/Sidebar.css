@@ -1,9 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap');
 .sidebar{
     background: #dcbe8e;
     width: 20%;
- 
     margin-left: 3%;
     border-radius: 2%;
+    font-family: 'Libre Baskerville', serif;
     
 }
 

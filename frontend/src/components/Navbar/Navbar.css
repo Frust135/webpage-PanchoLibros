@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap');
 .navbar{
     background-color: #D2A434;
     box-sizing: border-box;
@@ -9,6 +10,10 @@
     margin: 30px auto;
     width: 95%;
     transition: all 0.3s ease 0s;
+    font-family: 'Libre Baskerville', serif;
+}
+.navbar-mobile{
+    font-family: 'Libre Baskerville', serif;
 }
 #logo{
     width: 60px;
@@ -62,6 +67,7 @@ li, a{
     background-repeat: no-repeat;
     background-position-y: 6px;
     font-size: 1rem;
+    font-family: 'Libre Baskerville', serif;
     transition: all 0.3s ease 0s;
 }
 
@@ -97,7 +103,7 @@ hr{
     VISTA A 1200PX
 */
 
-@media (max-width: 1200px){
+@media (max-width: 1350px){
     .navbar{
         width: 100%;
         border-radius: 0px;
@@ -110,7 +116,7 @@ hr{
     VISTA PARA TABLETS
 */
 
-@media (max-width: 1024px){
+@media (max-width: 1124px){
     .compra p{
         display: none;
     }
