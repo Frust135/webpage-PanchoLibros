@@ -20,3 +20,9 @@
 .book{
   display: block;
 }
+
+@media (max-width: 670px){
+  .sidebar{
+    position: bottom;
+  }
+}

@@ -56,3 +56,17 @@ p{
 	clear: both;
 }
 
+@media (max-width: 670px){
+    .sidebar{
+        background: red;
+    }
+    .editorial_movil{
+        display: none;
+    }
+    .editorial{
+        display: none;
+    }
+    .logo_redes{
+        display: none;
+    }
+}

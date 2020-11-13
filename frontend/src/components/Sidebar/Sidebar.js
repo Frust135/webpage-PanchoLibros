@@ -11,15 +11,15 @@ const sidebar = (props) =>{
             Editoriales
         </h3>
         <ul className="edi">
-            <li><a href={props.alfaguara}>Alfaguara</a></li>
-            <li><a href={props.acantilado}>Acantilado</a></li>
-            <li><a href={props.anagrama}>Anagrama</a></li>
-            <li><a href={props.atalanta}>Atalanta</a></li>
-            <li><a href={props.cabaret}>Cabaret Voltaire</a></li>
-            <li><a href={props.errata}>Errata Naturae</a></li>
-            <li><a href={props.funa}>Funambulista</a></li>
-            <li><a href={props.marea}>Marea</a></li>
-            <li><a href={props.rhm}>RHM</a></li>
+            <li className="editorial_movil"><a href={props.alfaguara}>Alfaguara</a></li>
+            <li className="editorial_movil"><a href={props.acantilado}>Acantilado</a></li>
+            <li className="editorial_movil"><a href={props.anagrama}>Anagrama</a></li>
+            <li className="editorial_movil"><a href={props.atalanta}>Atalanta</a></li>
+            <li className="editorial_movil"><a href={props.cabaret}>Cabaret Voltaire</a></li>
+            <li className="editorial_movil"><a href={props.errata}>Errata Naturae</a></li>
+            <li className="editorial_movil"><a href={props.funa}>Funambulista</a></li>
+            <li className="editorial_movil"><a href={props.marea}>Marea</a></li>
+            <li className="editorial_movil"><a href={props.rhm}>RHM</a></li>
         </ul>
         <a href={props.logo_insta}>
             <img className="logo_redes" src={logo_insta} alt="Logo instagram">
