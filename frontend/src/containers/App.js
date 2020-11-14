@@ -5,7 +5,8 @@ import Header from '../components/Header/Header';
 import Navbar from '../components/Navbar/Navbar';
 import Sidebar from '../components/Sidebar/Sidebar';
 import Book from '../components/Book/Book';
-import Card from '../components/Card/Card';
+import Footer from '../components/Footer/Footer';
+//import Card from '../components/Card/Card';
 // OTROS 
 import imageExample from '../assets/Body/book-example.jpg'; //BORRAR CUANDO SE IMPLEMENTE LA DB
 
@@ -50,6 +51,7 @@ class App extends Component {
             precio={'13.000'}
             />
           </div> 
+          <Footer/>
         </div>
         <br/>
       </div>

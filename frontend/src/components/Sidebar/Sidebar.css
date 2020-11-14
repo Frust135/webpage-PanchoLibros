@@ -58,7 +58,14 @@ p{
 
 @media (max-width: 670px){
     .sidebar{
-        background: red;
+        background: #ffffff;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 80%;
+        margin-left: 10%;
+
+        
     }
     .editorial_movil{
         display: none;
@@ -69,4 +76,5 @@ p{
     .logo_redes{
         display: none;
     }
+
 }
