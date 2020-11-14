@@ -1,8 +1,13 @@
 import React from 'react';
+import ReactDom from 'react-dom';
 import './Card.css';
+import exit from '../../assets/Body/exit.svg';
+
 
 const card = (props) =>{
-    return(
+    let card = null;
+    if (props.open){
+        card=
         <div className="card">
             <div className="card-above">
                 <img src={props.portada} id="principal" alt="Portada"></img>
@@ -10,7 +15,8 @@ const card = (props) =>{
                 <img src={props.back} className="little-image" alt="Backside"></img>
             </div>
             <div className="card-text">
-                <p id="titulo">{props.nombre}</p>
+                <img src={exit} alt="Exit icon" id="exit-icon" onClick={props.click}></img>
+                <p id="titulo">{props.titulo}</p>
                 <hr/>
                 <p id="autor">Autor: {props.autor}</p>
                 <p id="descripcion">{props.descripcion}</p>
@@ -18,7 +24,14 @@ const card = (props) =>{
                 <button id="compra">¡Añadir a tu estanteria!</button>
             </div>
         </div>
+    }
+    return ReactDom.createPortal(
+        <div className="cards">
+            {card}
+        </div>,
+        document.getElementById('portal')
     );
 }
+
 
 export default card;
