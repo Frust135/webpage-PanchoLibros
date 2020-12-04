@@ -71,10 +71,14 @@ class App extends Component {
               carrito={'#'}
             />
           </div> 
+          
+          <div className="App-body">
           <Sidebar/>
-          <div className="body">
+          <div className="books">
             {books}
           </div>
+          </div>
+          
           <div className="App-footer">
             <Footer/>
           </div>
