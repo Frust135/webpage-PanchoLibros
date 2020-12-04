@@ -22,7 +22,7 @@
     transition: all 0.3s ease 0s;
 }
 
-@media (max-width: 1024px){
+@media (max-width: 1124px){
     .box{
         padding: 0.8rem 0.5rem 0rem 2rem;
         transition: all 0.3s ease 0s;

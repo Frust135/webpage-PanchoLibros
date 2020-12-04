@@ -56,7 +56,7 @@ p{
 	clear: both;
 }
 
-@media (max-width: 670px){
+@media (max-width: 1124px){
     .sidebar{
         background: #ffffff;
         position: absolute;

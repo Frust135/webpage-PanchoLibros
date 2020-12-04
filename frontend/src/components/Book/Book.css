@@ -4,6 +4,7 @@
     margin: 0 auto;
     padding-top: 1rem;
     float: left;
+    transition: all 0.3s ease 0s;
 }
 .book img{
     border: 2px solid black;
@@ -29,4 +30,19 @@
 .semi-bold{
     font-size: 1.2rem;
     font-weight: 400;
+}
+
+@media (max-width: 1024px){
+    .book{
+        width: 50%;
+    }
+}
+
+@media (max-width: 624px){
+    .book p{
+        color: white;
+    }
+    .book img{
+        border: transparent;
+    }
 }
