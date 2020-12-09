@@ -98,6 +98,10 @@
     font-size: 1.7rem;
     margin-bottom: 1rem;
 }
+#principal{
+    width: 170px;
+    height: 250px;
+}
 
 .card-text button{
     margin-left: 200px;

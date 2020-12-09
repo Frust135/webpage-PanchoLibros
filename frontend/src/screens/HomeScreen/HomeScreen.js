@@ -1,5 +1,5 @@
-import React, { useEffect, useState } from 'react';
-import axios from 'axios';
+import React, { useEffect } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
 
 // COMPONENTES
 
@@ -8,24 +8,18 @@ import Book from '../../components/Book/Book';
 import LoadingBox from '../../components/LoadingBox/LoadingBox';
 import ErrorBox from '../../components/ErrorBox/ErrorBox';
 
+// REDUX
+
+import { listLibros } from '../../actions/productActions';
+
 const Homescreen = (props) =>{
-    const [libros, setLibros] = useState([]);
-    const [loading, setLoading] = useState(false);
-    const [error, setError] = useState(false);
+    const dispatch = useDispatch();
+    const productList = useSelector(state => state.productList);
+    const { loading, error, products } = productList;
+
+
     useEffect(() =>{
-        const getData = async () =>{
-            try{
-                setLoading(true);
-                const { data } = await axios.get('/api/libros');
-                setLoading(false);
-                setLibros(data);
-            }catch(err){
-                setError(err.message);
-                setLoading(false);
-            }
-            
-        };
-        getData();
+        dispatch(listLibros());
     }, [])
     return(
         <div className="App-body">
@@ -35,7 +29,7 @@ const Homescreen = (props) =>{
                 :
                 error?<ErrorBox variant="danger">{error}</ErrorBox> 
                 :
-                (libros.map((libro) =>(
+                (products.map((libro) =>(
                     <Book 
                     click={props.clickHandler}
                     show={props.showCard}
@@ -43,6 +37,8 @@ const Homescreen = (props) =>{
                     precio={libro.precio}
                     autor={libro.autor}
                     descripcion={libro.descripcion}
+                    portada={libro.portada}
+                    back={libro.back}
                     />
                 )))
                 }
