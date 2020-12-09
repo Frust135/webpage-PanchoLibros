@@ -5,7 +5,7 @@ const data = {
             titulo: 'test',
             autor: 'autor',
             descripcion: 'lorem lorem lorem lorem lorem',
-            precio: 13.000,
+            precio: 13500,
         }
     ]
 
