@@ -5,9 +5,7 @@ import exit from '../../assets/Body/exit.svg';
 
 
 const card = (props) =>{
-    let card = null;
-    if (props.open){
-        card=
+    let cardDesign=
         <div className="card">
             <div className="card-above">
                 <img src={props.portada} id="principal" alt="Portada"></img>
@@ -23,11 +21,10 @@ const card = (props) =>{
                 <p id="precio">${props.precio}</p>
                 <button id="compra">¡Añadir a tu estanteria!</button>
             </div>
-        </div>
-    }
+    </div>
     return ReactDom.createPortal(
         <div className="cards">
-            {card}
+            {cardDesign}
         </div>,
         document.getElementById('portal')
     );

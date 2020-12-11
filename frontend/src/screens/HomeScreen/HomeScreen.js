@@ -20,7 +20,7 @@ const Homescreen = (props) =>{
 
     useEffect(() =>{
         dispatch(listLibros());
-    }, [])
+    }, [dispatch])
     return(
         <div className="App-body">
             <Sidebar/>
@@ -31,6 +31,7 @@ const Homescreen = (props) =>{
                 :
                 (products.map((libro) =>(
                     <Book 
+                    key={libro.ISBN}
                     click={props.clickHandler}
                     show={props.showCard}
                     titulo={libro.titulo}
@@ -39,6 +40,7 @@ const Homescreen = (props) =>{
                     descripcion={libro.descripcion}
                     portada={libro.portada}
                     back={libro.back}
+                    isbn={libro.ISBN}
                     />
                 )))
                 }

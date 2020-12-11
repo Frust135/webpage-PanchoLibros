@@ -8,27 +8,46 @@ import Footer from '../components/Footer/Footer';
 // SCREENS
 import HomeScreen from '../screens/HomeScreen/HomeScreen';
 import BuyScreen from '../screens/BuyScreen/BuyScreen'
+import ShowCard from '../actions/showCard';
 
 class App extends Component {
+  
+  // Estado 
   state = {
-    cardPop: false
+    cardPop: false,
+    libroPop: 0
   }
-  clickHandler = () =>{
+  //Click handler de los libros
+  clickHandler = (e) =>{
       if (this.state.cardPop){
-        this.setState({cardPop: false})
+        this.setState({cardPop: false, libroPop: 0})
       }else{ 
-        this.setState({cardPop: true})
+        this.setState({cardPop: true, libroPop: parseInt(e.target.id)})
       }
   }
+
   render(){
+    //Estilo de base de la página home
     let styleDark ={
       transition: "all 0.3s ease 0s"
     }
+    //Inicialmente no existe ninguna carta
+    let card = null;
+    //Se verifica si una tarjeta ha sido clickeada
     if (this.state.cardPop){
-        styleDark = {
-            filter: "brightness(40%)",
-            transition: "all 0.3s ease 0s",
-        } 
+      card = (
+        <div>
+          <ShowCard 
+          id = {this.state.libroPop}
+          clickHandler={this.clickHandler}
+          />
+        </div>
+      )
+      //Y se cambia el estilo con el fin de oscurecer el fondo
+      styleDark = {
+          filter: "brightness(40%)",
+          transition: "all 0.3s ease 0s",
+      } 
     }
     return (
       <div className="App" style={styleDark}>
@@ -43,17 +62,20 @@ class App extends Component {
             />
           </div> 
           <BrowserRouter>
+
           <Route path="/estanteria" 
           component={BuyScreen}/>
-          <Route path="/" 
-          render={(props)=>(
+
+          <Route path="/"
+             render={(props)=>(
             <HomeScreen {...props} 
             clickHandler={this.clickHandler}
             showCard={this.state.cardPop}
-            titulo={'test'}/>
+            />
           )}
           exact/>
           </BrowserRouter>
+          {card}
           <div className="App-footer">
             <Footer/>
           </div>
