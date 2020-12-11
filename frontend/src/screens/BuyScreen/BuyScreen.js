@@ -1,11 +1,14 @@
 import React from 'react';
 import './BuyScreen.css';
 
+// COMPONENTES
+import Ccw from '../../components/Content-container-wrap/content-container-wrap';
+
+ 
 const buyscreen = () =>{
     return(
-        <div>
-            <h1>hola</h1>
-        </div>
+            <Ccw/>
+
     );
 }
 

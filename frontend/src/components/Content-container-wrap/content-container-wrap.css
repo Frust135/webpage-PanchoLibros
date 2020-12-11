@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap');
+.Container-carrito-body{
+    width: 1300px;
+    height: 1000px;
+    margin-left: 35px;
+}
+
+.Container-carrito{
+    width: 600px;
+    height: 190px;
+    float: left;
+}
+
+.Container-libro{
+    background: white;
+    width: 430px;
+    height: 190px;
+    float: left;
+    border-radius: 6px 0 0 6px;
+}
+
+.Container-precio-libro{
+    background: #dcbe8e;
+    width: 170px;
+    height: 190px;
+    float: left;
+    border-radius: 0 6px 6px 0;
+}
+.Clase-total{
+    background: white;
+    width: 500px;
+    height: 150px;
+    float: left;
+    margin-left: 130px;
+    border-radius: 6px;
+}
+#sdf{
+    text-align: center;
+}
