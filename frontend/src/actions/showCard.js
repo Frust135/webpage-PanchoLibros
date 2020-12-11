@@ -8,11 +8,9 @@ const ShowCard = (props) =>{
     const productId = props.id;
     const productDetails = useSelector((state) => state.productDetails);
     const { loading, error, product } = productDetails;
-    console.log(productId);
     useEffect(() => {
       dispatch(detailsProduct(productId));
     }, [dispatch, productId]);
-    console.log(product);
     return (
         <div className="card">
             {loading? <Card/>
