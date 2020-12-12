@@ -2,13 +2,18 @@ import React from 'react';
 import './BuyScreen.css';
 
 // COMPONENTES
-import Ccw from '../../components/Content-container-wrap/content-container-wrap';
-
+import ContainerLibro from '../../components/ContainerCarrito/ContainerLibro';
+import ContainerPrecio from '../../components/ContainerCarrito/ContainerPrecio';
  
-const buyscreen = () =>{
+const buyscreen = (props) =>{
+    const productId = props.id;
     return(
-            <Ccw/>
-
+        <div>
+            <ContainerLibro
+            titulo={props.titulo}
+            isbn={productId}/>
+            <ContainerPrecio/>
+        </div>
     );
 }
 

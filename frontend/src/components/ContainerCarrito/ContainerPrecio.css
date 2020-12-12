@@ -1,0 +1,10 @@
+.ContainerPrecio{
+    background: white;
+    width: 30%;
+    height: 150px;
+    border-radius: 6px;
+    margin: 0 auto;
+}
+#ContainerPrecio-total{
+    text-align: center;
+}

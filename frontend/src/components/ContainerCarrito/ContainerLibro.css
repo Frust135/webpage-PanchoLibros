@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap');
+.ContainerLibro{
+    width: 60%;
+}
+.ContainerLibro-libro{
+    background-color: white;
+    width: 75%;
+    height: 190px;
+    border-radius: 6px 0 0 6px;
+    display: inline-block;
+}
+.ContainerLibro-precio{
+    background-color: #dcbe8e;
+    width: 25%;
+    height: 190px;
+    display: inline-block;
+    border-radius: 0 6px 6px 0;
+}
+

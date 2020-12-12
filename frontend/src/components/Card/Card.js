@@ -5,6 +5,9 @@ import exit from '../../assets/Body/exit.svg';
 
 
 const card = (props) =>{
+    const addToCartHandler = () =>{
+        console.log(props.isbn)
+    }
     let cardDesign=
         <div className="card">
             <div className="card-above">
@@ -19,7 +22,13 @@ const card = (props) =>{
                 <p id="autor">Autor: {props.autor}</p>
                 <p id="descripcion">{props.descripcion}</p>
                 <p id="precio">${props.precio}</p>
-                <button id="compra">¡Añadir a tu estanteria!</button>
+                {
+                    props.stock > 0 &&(<button onClick={addToCartHandler} id="compra">¡Añadir a tu estanteria!</button>)
+                }
+                {
+                    props.stock === 0 &&(<p>No hay stock disponible.</p>)
+                }
+                
             </div>
     </div>
     return ReactDom.createPortal(

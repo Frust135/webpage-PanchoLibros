@@ -1,3 +1,9 @@
-h1{
-    color: white;
+
+.ContainerLibro{
+    display: inline-block;
+    padding: 1rem;
+}
+
+.ContainerPrecio{
+    display: block;
 }
