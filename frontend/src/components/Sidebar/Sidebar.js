@@ -33,7 +33,7 @@ const sidebar = (props) =>{
             <img className="imagen_personalizada" src={imagen_personalizada} alt="Imagen de la libreria"></img>
             <p className="clear" 
             >
-                "35 años... en este oficio tan maravilloso una aventura un sueño que es un libro"
+                "35 años en este oficio tan maravilloso, una aventura, un sueño que es un libro."
             </p>
         </div>
         </div>

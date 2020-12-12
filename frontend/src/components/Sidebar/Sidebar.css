@@ -2,6 +2,7 @@
 .sidebar{
     background: #dcbe8e;
     width: 20%;
+    height: 808px;
     margin-left: 3%;
     border-radius: 2%;
     font-family: 'Libre Baskerville', serif;
@@ -64,8 +65,7 @@ p{
         left: 0;
         width: 80%;
         margin-left: 10%;
-
-        
+        height: 300px;
     }
     .editorial_movil{
         display: none;

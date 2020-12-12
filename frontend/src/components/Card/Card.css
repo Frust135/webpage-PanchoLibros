@@ -5,7 +5,7 @@
 .card{
     width: 100%;
     position: fixed;
-    top: 30%;
+    top: 10rem;
     margin: 0 auto;
     left: 4%;
     text-align: center;
@@ -51,6 +51,7 @@
     margin: 1rem .5rem 0rem .5rem;
     padding: 0rem 1rem 0rem 1rem;
     width: 60px;
+    height: 84px;
     background-color: white;
 }
 /*
@@ -188,5 +189,17 @@
         position: -webkit-sticky;
         position: sticky;
         top: 0;
+    }
+}
+
+@media (max-height:750px){
+    .card{
+        top: 8rem;
+    }
+}
+
+@media (max-height:662px){
+    .card{
+        top: 6rem;
     }
 }

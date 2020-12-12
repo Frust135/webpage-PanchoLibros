@@ -1,13 +1,13 @@
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-
+import './HomeScreen.css';
 // COMPONENTES
 
 import Sidebar from '../../components/Sidebar/Sidebar';
 import Book from '../../components/Book/Book';
 import LoadingBox from '../../components/LoadingBox/LoadingBox';
 import ErrorBox from '../../components/ErrorBox/ErrorBox';
-
+import PageButton from '../../components/PageButton/PageButton';
 // REDUX
 
 import { listLibros } from '../../actions/productActions';
@@ -42,9 +42,15 @@ const Homescreen = (props) =>{
                     back={libro.back}
                     isbn={libro.ISBN}
                     />
+                    
                 )))
                 }
+                <PageButton
+                 back={'#'}
+                 page={1}
+                forward={'#'}/>     
             </div>
+               
         </div>
     );
 }

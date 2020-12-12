@@ -1,0 +1,26 @@
+.pageButton-back, .pageButton-forward{
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 16px;
+    margin: 1.5rem;
+    border-radius: 60px;
+    background-color: #E3B138;
+    font-size: 1rem;
+    font-weight: bold;
+    color: black;
+    transition: all 0.3s ease 0s;
+}
+.pageButton p{
+    display: inline-block;
+}
+.pageButton{
+    width: 100%;
+    display: block;
+}
+.pageButton-back:hover, .pageButton-forward:hover{
+    transition: all 0.3s ease 0s;
+    color: white;
+}
+
+
+
