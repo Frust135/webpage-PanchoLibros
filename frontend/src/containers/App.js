@@ -49,7 +49,9 @@ class App extends Component {
           transition: "all 0.3s ease 0s",
       } 
     }
+
     return (
+      <BrowserRouter>
       <div className="App" style={styleDark}>
         <div className="Container">
           <div className="App-header"> 
@@ -61,10 +63,10 @@ class App extends Component {
               carrito={'/estanteria'}
             />
           </div> 
-          <BrowserRouter>
+          
 
           <Route path="/estanteria/:id" component={BuyScreen}/>
-          
+          <Route path="/estanteria" component={BuyScreen} exact/>
           <Route path="/"
              render={(props)=>(
             <HomeScreen {...props} 
@@ -73,7 +75,6 @@ class App extends Component {
             />
           )}
           exact/>
-          </BrowserRouter>
           {card}
           <div className="App-footer">
             <Footer/>
@@ -81,6 +82,7 @@ class App extends Component {
           
         </div>
       </div>
+      </BrowserRouter>
       
     );
   }

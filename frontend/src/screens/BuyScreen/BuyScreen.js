@@ -16,7 +16,7 @@ const Buyscreen = (props) =>{
         }
     }, [dispatch, productId]);
     return(
-        <div>
+        <div className="App-buyscreen">
             <ContainerLibro
             titulo={props.titulo}
             isbn={productId}/>

@@ -13,5 +13,6 @@ export const addToCart = (productId) => async(dispatch, getState) =>{
             precio: data.precio,
             portada: data.portada
         }
-    })
+    });
+    localStorage.setItem('cartItems', JSON.stringify(getState().cart.cartItems));
 }

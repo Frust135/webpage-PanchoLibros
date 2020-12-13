@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDom from 'react-dom';
 import './Card.css';
 import exit from '../../assets/Body/exit.svg';
+import {Link} from 'react-router-dom';
 
 const card = (props) =>{
     let cardDesign=
@@ -19,7 +20,7 @@ const card = (props) =>{
                 <p id="descripcion">{props.descripcion}</p>
                 <p id="precio">${props.precio}</p>
                 {
-                    props.stock > 0 &&(<a href={"/estanteria/"+props.isbn}><button id="compra">¡Añadir a tu estanteria!</button></a>)
+                    props.stock > 0 &&(<Link to={"/estanteria/"+props.isbn}><button id="compra" onClick={props.click}>¡Añadir a tu estanteria!</button></Link>)
                 }
                 {
                     props.stock === 0 &&(<p>No hay stock disponible.</p>)

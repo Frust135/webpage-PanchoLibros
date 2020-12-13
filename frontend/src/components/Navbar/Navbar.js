@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import {Link} from 'react-router-dom';
 import './Navbar.css';
 import bookshelf from '../../assets/Header/bookshelf.svg';
 import burger from '../../assets/Header/burger.svg'
@@ -24,7 +25,7 @@ const Navbar = (props) =>{
             </div>
 
             <div className="compra">
-                <a href={props.carrito}><img src={bookshelf} id="logo" alt="Bookshelf"/></a>
+                <Link to={props.carrito}><img src={bookshelf} id="logo" alt="Bookshelf"/></Link>
                 <p>¡Añade un libro a tu <br/> estantería!</p> 
             </div>  
 
