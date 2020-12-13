@@ -8,6 +8,7 @@ const data = {
             precio: 13500,
             portada: '/images/example-lincoln.jpg',
             back: '/images/example-lincoln.jpg',
+            editorial: 'Universidad Tencnica del Estado',
             stock: 1
         },
         {
@@ -18,6 +19,7 @@ const data = {
             precio: 10000,
             portada: '/images/example-eljuicio.jpg',
             back: '/images/example-eljuicio.jpg',
+            editorial: 'Espasa',
             stock: 1
         },
         {
@@ -28,6 +30,7 @@ const data = {
             precio: 12000,
             portada: '/images/example-oscuros.jpg',
             back: '/images/example-oscuros.jpg',
+            editorial: 'Montena',
             stock: 1
         },
         {

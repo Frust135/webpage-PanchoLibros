@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap');
 .ContainerLibro{
     width: 60%;
+    font-family: 'Libre Baskerville', serif;
 }
 .ContainerLibro-libro{
     background-color: white;
@@ -15,7 +16,40 @@
     height: 190px;
     display: inline-block;
     border-radius: 0 6px 6px 0;
+    
 }
 .App-buyscreen{
     margin-bottom: 2rem;
+}
+.ContainerLibro-portada{
+    width: 120px;
+    height: 180px;
+    float: left;
+    padding: .35rem 1rem;
+}
+
+
+#ContainerLibro-exit{
+    width: 30px;
+    float: right;
+    padding: .2rem;
+}
+#ContainerLibro-exit:hover{
+    transition: filter 0.2s ease;
+    filter: brightness(0) invert(.5);
+    cursor: pointer;
+}
+#containerPrecio{
+    display: block;
+    text-align: center;
+    padding-top: 4rem;
+    font-size: 1.2rem;
+}
+#containerTitulo{
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+.ContainerLibro-texto{
+    text-align: center;
 }

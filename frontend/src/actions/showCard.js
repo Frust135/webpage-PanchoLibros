@@ -22,7 +22,7 @@ const ShowCard = (props) =>{
           portada={product.portada}
           back={product.back}
           titulo={product.titulo}
-          autor={product.titulo}
+          autor={product.autor}
           precio={product.precio}
           descripcion={product.descripcion}
           isbn={product.ISBN}
