@@ -1,4 +1,4 @@
-import { CART_ADD_ITEM } from "../constants/cartConstants";
+import { CART_ADD_ITEM, CART_REMOVE_ITEM } from "../constants/cartConstants";
 import Axios from 'axios';
 
 
@@ -11,8 +11,15 @@ export const addToCart = (productId) => async(dispatch, getState) =>{
             titulo: data.titulo,
             autor: data.autor,
             precio: data.precio,
-            portada: data.portada
+            portada: data.portada,
+            ISBN: data.ISBN,
+            editorial: data.editorial
         }
     });
     localStorage.setItem('cartItems', JSON.stringify(getState().cart.cartItems));
-}
+};
+
+export const removeFromCart = (productId) => (dispatch, getState) => {
+    dispatch({ type: CART_REMOVE_ITEM, payload: productId });
+    localStorage.setItem('cartItems', JSON.stringify(getState().cart.cartItems));
+  };

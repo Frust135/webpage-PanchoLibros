@@ -5,8 +5,9 @@ import './BuyScreen.css';
 // COMPONENTES
 import ContainerLibro from '../../components/ContainerCarrito/ContainerLibro';
 import ContainerPrecio from '../../components/ContainerCarrito/ContainerPrecio';
-import { addToCart } from '../../actions/cartActions';
+import { addToCart, removeFromCart } from '../../actions/cartActions';
  
+
 const Buyscreen = (props) =>{
     const cart = useSelector(state => state.cart);
     const { cartItems } = cart;
@@ -18,27 +19,24 @@ const Buyscreen = (props) =>{
         }
     }, [dispatch, productId]);
     const removeBookHandler = (id) =>{
-
-    }
-    const pagarHandler = () =>{
-
+        dispatch(removeFromCart(id));
+        console.log(id);
     }
     return(
         <div className="App-buyscreen">
             {cartItems.length === 0 ?
-                <ContainerLibro
-                titulo={"Tu estantería se encuentra vacía"}/>
+                (<div className="estanteria-vacia"><p>Tu estantería se encuentra vacía.</p></div>)
                 :
                 cartItems.map((libros) =>(
                     <ContainerLibro
-                    key={productId}
+                    key={libros.ISBN}
                     titulo={libros.titulo}
                     autor={libros.autor}
                     editorial={libros.editorial}
                     portada={libros.portada}
-                    isbn={libros.isbn}
                     precio={libros.precio}
-                    removeBookHandler={removeBookHandler(productId)}/>
+                    removeBookHandler={() => removeBookHandler(libros.ISBN)}
+                    />
                     
                 ))
                 
@@ -46,7 +44,7 @@ const Buyscreen = (props) =>{
             <ContainerPrecio
             cantidad={cartItems.reduce((acumulador) => acumulador + 1 , 0)}
             preciototal={cartItems.reduce((acumulador, libro) => acumulador + libro.precio, 0)}
-            pagarHandler={pagarHandler}/>
+            />
         </div>
     );
 }

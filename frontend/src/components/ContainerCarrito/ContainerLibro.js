@@ -1,9 +1,16 @@
 import React from 'react';
 import exit from '../../assets/Body/exit.svg';
 import './ContainerLibro.css';
+import {useDispatch} from 'react-redux';
+import {removeFromCart} from '../../actions/cartActions';
 
 const ContainerLibro = (props) =>{
     
+    const dispatch = useDispatch()
+    const removeBookHandler = (id) =>{
+        dispatch(removeFromCart(id));
+        console.log(props.isbn);
+    }
     return(
         <div className="ContainerLibro">
             <div className="ContainerLibro-libro">
