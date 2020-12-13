@@ -12,13 +12,6 @@ const ContainerLibro = (props) =>{
                 {props.precio}
             </div>
         </div>
-        // <div className="Container-carrito-body">
-        //     <div className="Container-carrito">
-        //         <div className="Container-libro"></div>
-        //         <div className="Container-precio-libro"></div>
-        //     </div>
-        // </div>
-
     );
 }
 

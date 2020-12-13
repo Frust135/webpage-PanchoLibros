@@ -63,9 +63,8 @@ class App extends Component {
           </div> 
           <BrowserRouter>
 
-          <Route path="/estanteria" 
-          component={BuyScreen}/>
-
+          <Route path="/estanteria/:id" component={BuyScreen}/>
+          
           <Route path="/"
              render={(props)=>(
             <HomeScreen {...props} 
