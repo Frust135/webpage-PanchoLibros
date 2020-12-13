@@ -6,6 +6,7 @@
     border-radius: 6px;
     margin: 0 auto;
     font-family: 'Libre Baskerville', serif;
+    transition: all 0.3s ease 0s;
 }
 #ContainerPrecio-total{
     text-align: center;
@@ -24,4 +25,18 @@
     font-size: 1rem;
     background-color: #DB9E05;
     border-radius: 40px;
+}
+
+@media (max-width: 1124px){
+    .ContainerPrecio{
+        width: 60%;
+        transition: all 0.3s ease 0s;
+    }
+}
+
+@media (max-width: 650px){
+    .ContainerPrecio{
+        width: 80%;
+        transition: all 0.3s ease 0s;
+    }
 }

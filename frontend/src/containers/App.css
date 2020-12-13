@@ -10,7 +10,7 @@
 
 @media (max-width: 1124px){
   .App-header{
-    margin-bottom: -150px;
+    margin-bottom: -40px;
     position: relative;
     z-index: 100;
   }

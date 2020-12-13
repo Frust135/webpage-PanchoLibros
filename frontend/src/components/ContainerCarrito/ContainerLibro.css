@@ -2,6 +2,7 @@
 .ContainerLibro{
     width: 60%;
     font-family: 'Libre Baskerville', serif;
+    transition: all 0.3s ease 0s;
 }
 .ContainerLibro-libro{
     background-color: white;
@@ -16,7 +17,6 @@
     height: 190px;
     display: inline-block;
     border-radius: 0 6px 6px 0;
-    
 }
 .App-buyscreen{
     margin-bottom: 2rem;
@@ -52,4 +52,27 @@
 }
 .ContainerLibro-texto{
     text-align: center;
+}
+
+@media (max-width: 1124px){
+    .ContainerLibro{
+        width: 80%;
+        transition: all 0.3s ease 0s;
+    }
+}
+
+@media (max-width: 650px){
+    .ContainerLibro{
+        width: 90%;
+        transition: all 0.3s ease 0s;
+    }
+    #containerTitulo{
+        font-size: 1rem;
+    }
+    .ContainerLibro-texto{
+        font-size: .9rem;
+    }
+    #containerPrecio{
+        font-size: 1rem;
+    }
 }
