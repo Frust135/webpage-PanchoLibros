@@ -1,5 +1,6 @@
 import React from 'react';
 import './ContainerPrecio.css';
+import {Link} from 'react-router-dom';
 
 const ContainerPrecio = (props) =>{
     return(
@@ -7,7 +8,7 @@ const ContainerPrecio = (props) =>{
             <p id="ContainerPrecio-total">TOTAL</p>
             <p id="ContainerPrecio-cantidad">{props.cantidad} Libros</p>
             <p id="ContainerPrecio-precio">${props.preciototal}</p>
-            <button className="pagar" disabled={props.cantidad===0}> Pagar </button>
+            <Link to="/informacion"><button className="pagar" disabled={props.cantidad===0}> Comprar </button></Link>
         </div>
     );
 

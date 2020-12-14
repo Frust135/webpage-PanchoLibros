@@ -8,6 +8,9 @@ const initialState = {
         cartItems: localStorage.getItem('cartItems')
         ? JSON.parse(localStorage.getItem('cartItems'))
         : [],
+    informacionCarrito: localStorage.getItem('informacionCarrito')
+        ? JSON.parse(localStorage.getItem('informacionCarrito'))
+        : {},
     } 
 };
 const reducer = combineReducers({

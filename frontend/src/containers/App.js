@@ -5,10 +5,12 @@ import './App.css';
 import Header from '../components/Header/Header';
 import Navbar from '../components/Navbar/Navbar';
 import Footer from '../components/Footer/Footer';
+import ShowCard from '../actions/showCard';
+
 // SCREENS
 import HomeScreen from '../screens/HomeScreen/HomeScreen';
-import BuyScreen from '../screens/BuyScreen/BuyScreen'
-import ShowCard from '../actions/showCard';
+import BuyScreen from '../screens/BuyScreen/BuyScreen';
+import InformationScreen from '../screens/InformationScreen/InformationScreen';
 
 class App extends Component {
   
@@ -63,9 +65,9 @@ class App extends Component {
               carrito={'/estanteria'}
             />
           </div> 
-          
-
-          <Route path="/estanteria/:id" component={BuyScreen}/>
+          <div className="App-Elements">
+          <Route path="/informacion" component={InformationScreen} exact/>
+          <Route path="/estanteria/:id" component={BuyScreen} exact/>
           <Route path="/estanteria" component={BuyScreen} exact/>
           <Route path="/"
              render={(props)=>(
@@ -75,6 +77,7 @@ class App extends Component {
             />
           )}
           exact/>
+          </div>
           {card}
           <div className="App-footer">
             <Footer/>

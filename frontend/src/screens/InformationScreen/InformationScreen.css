@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap');
+.InformationScreen{
+    font-family: 'Libre Baskerville', serif;
+    transition: all 0.3s ease 0s;
+}
+.InformationScreen-info{
+    background-color: #dcbe8e;
+    width: 50%;
+    margin: 0 auto;
+    border-radius: 1rem;
+    padding: .6rem;
+    transition: all 0.3s ease 0s;
+}
+.InformationScreen-info h2{
+    color: #653718;
+    font-size: 1rem;
+}
+
+.InformationScreen label{
+    display: block;
+    color: white;
+    padding: 1rem;
+    letter-spacing: .2rem;
+}
+.InformationScreen input{
+    border: 1px solid #cccccc; 
+    outline:0; 
+    height:30px; 
+    width: 50%; 
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+@media (max-width: 1400px){
+    .InformationScreen-info{
+        width: 80%;
+    }
+}
+@media (max-width: 600px){
+    .InformationScreen-info h2{
+        font-size: .9rem;
+    }
+    .InformationScreen-info h1{
+        font-size: 1.4rem;
+    }
+    .InformationScreen input{
+        width: 80%;
+    }
+}
