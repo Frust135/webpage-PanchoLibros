@@ -10,17 +10,17 @@
 .estanteria-vacia{
     width: 60%;
     margin: 0 auto;
-    color:black;
+    color:#653718;
     font-family: 'Libre Baskerville', serif;
     font-weight: bold;
     font-size: 1.4rem;
-    background-color: white;
+    background-color: #D2A434;
     height: 120px;
     border-radius: 6px;
     margin-top: 4rem;
     margin-bottom: 6rem;
 }
 .estanteria-vacia p{
-    padding-top: 2rem;
+    padding-top: 3rem;
     text-align: center;
 }
