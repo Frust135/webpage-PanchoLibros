@@ -1,18 +1,22 @@
 import React, { useState } from 'react';
 import { useDispatch } from 'react-redux';
-import { saveInformation } from '../../actions/cartActions';
+import { saveInformation, saveInformationPago } from '../../actions/cartActions';
 import './InformationScreen.css';
 
-const InformationScreen = () =>{
+const InformationScreen = (props) =>{
     const [nombre, setNombre] = useState('');
     const [apellidos, setApellidos] = useState('');
     const [rut, setRut] = useState('');
     const [telefono, setTelefono] = useState('');
-    const dispatch = useDispatch();
+    const [metodoPago, setMetodoPago] = useState('PayPal');
+    const dispatch = useDispatch(props);
     const submitHandler = (e) =>{
         e.preventDefault();
-        dispatch(saveInformation({nombre, apellidos, rut, telefono}))
-    }
+        dispatch(saveInformation({nombre, apellidos, rut, telefono}));
+        dispatch(saveInformationPago(metodoPago));
+        props.history.push('/orden');
+    };
+
     return(
     <div className="InformationScreen">
         <form className="informacion-form" onSubmit={submitHandler}>
@@ -37,6 +41,17 @@ const InformationScreen = () =>{
             <div>
                 <label htmlFor="telefono">TÉLEFONO</label>
                 <input type="text" id="telefono" placeholder="Ingrese su número telefónico" value={telefono} onChange={(e) => setTelefono(e.target.value)} required></input>
+            </div>
+            <div>
+                <label htmlFor="pago">MÉTODO DE PAGO</label>
+                <div className="paypal-pago">
+                    <input type="radio" id="paypal" value="PayPal" name ="metodo-pago" required checked onChange={(e) => setMetodoPago(e.target.value)}></input>
+                    <label id="paypal-lbl" htmlFor="paypal">PayPal</label>
+                </div>
+                <div className="webpay-pago">
+                    <input type="radio" id="webpay" value="WebPay" name ="metodo-pago" required onChange={(e) => setMetodoPago(e.target.value)}></input>
+                    <label htmlFor="webpay">WebPay</label>
+                </div>
             </div>
             <div>
                 <label/>

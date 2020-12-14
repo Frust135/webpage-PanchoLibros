@@ -1,4 +1,4 @@
-import { CART_ADD_ITEM, CART_REMOVE_ITEM, CART_SAVE_INFORMATION } from "../constants/cartConstants";
+import { CART_ADD_ITEM, CART_REMOVE_ITEM, CART_SAVE_INFORMATION, CART_SAVE_PAGO } from "../constants/cartConstants";
 import Axios from 'axios';
 
 
@@ -26,5 +26,9 @@ export const removeFromCart = (productId) => (dispatch, getState) => {
 
 export const saveInformation = (data) => (dispatch) =>{
     dispatch({type: CART_SAVE_INFORMATION, payload: data});
-    localStorage.setItem('informacionCarrito', JSON.stringify(data));
+    localStorage.setItem('InformacionUsuario', JSON.stringify(data));
 };
+
+export const saveInformationPago = (data) => (dispatch) =>{
+    dispatch({type: CART_SAVE_PAGO, payload: data});
+}

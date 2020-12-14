@@ -2,6 +2,7 @@
 .InformationScreen{
     font-family: 'Libre Baskerville', serif;
     transition: all 0.3s ease 0s;
+    margin: 5rem 0rem;
 }
 .InformationScreen-info{
     background-color: #dcbe8e;
@@ -47,4 +48,10 @@
     .InformationScreen input{
         width: 80%;
     }
+}
+.paypal-pago{
+    display: inline-block;
+}
+.webpay-pago{
+    display: inline-block;
 }

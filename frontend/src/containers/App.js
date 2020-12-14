@@ -11,6 +11,7 @@ import ShowCard from '../actions/showCard';
 import HomeScreen from '../screens/HomeScreen/HomeScreen';
 import BuyScreen from '../screens/BuyScreen/BuyScreen';
 import InformationScreen from '../screens/InformationScreen/InformationScreen';
+import OrdenScreen from '../screens/OrdenScreen/OrdenScreen';
 
 class App extends Component {
   
@@ -67,6 +68,7 @@ class App extends Component {
           </div> 
           <div className="App-Elements">
           <Route path="/informacion" component={InformationScreen} exact/>
+          <Route path="/orden" component={OrdenScreen} exact/>
           <Route path="/estanteria/:id" component={BuyScreen} exact/>
           <Route path="/estanteria" component={BuyScreen} exact/>
           <Route path="/"

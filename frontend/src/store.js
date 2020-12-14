@@ -8,9 +8,10 @@ const initialState = {
         cartItems: localStorage.getItem('cartItems')
         ? JSON.parse(localStorage.getItem('cartItems'))
         : [],
-    informacionCarrito: localStorage.getItem('informacionCarrito')
-        ? JSON.parse(localStorage.getItem('informacionCarrito'))
+        InformacionUsuario: localStorage.getItem('InformacionUsuario')
+        ? JSON.parse(localStorage.getItem('InformacionUsuario'))
         : {},
+    metodoPago: 'PayPal',
     } 
 };
 const reducer = combineReducers({
