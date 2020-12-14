@@ -27,9 +27,10 @@
         height: 1550px;
     } 
     .books{
-        width: 90%;
+        width: 95%;
         height: 1260px;
         transition: all 0.3s ease 0s;
+        left: 0px;
     }
     .sidebar{
         position: bottom;

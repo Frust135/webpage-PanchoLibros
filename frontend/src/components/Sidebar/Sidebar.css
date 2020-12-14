@@ -29,7 +29,13 @@ ul.edi {
 .logo_redes{
     width: 90px;
     height: 50px;
-    padding-top: 40%;
+    margin-top: 8rem;
+    margin-bottom: 1rem;
+    transition: all 0.3s ease 0s;
+}
+.logo_redes:hover{
+    filter: brightness(0) invert(1);
+    cursor: pointer;
 }
 
 .imagen_personalizada{
@@ -46,10 +52,9 @@ p{
 
 .borde_izquierdo{
     border-left: 3px solid #837C6A;
-    margin-left: 6%;
-    margin-top: 5%;
-    margin-bottom: 5%;
-    margin-right: 5%;
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+    margin-right: 1rem;
     padding: 3%;
 }
 
@@ -58,6 +63,9 @@ p{
 }
 
 @media (max-width: 1124px){
+    .borde_izquierdo{
+        padding: .5rem;
+    }
     .sidebar{
         background: #ffffff;
         position: absolute;
@@ -65,7 +73,7 @@ p{
         left: 0;
         width: 80%;
         margin-left: 10%;
-        height: 300px;
+        height: 225px;
     }
     .editorial_movil{
         display: none;

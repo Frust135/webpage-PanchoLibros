@@ -13,7 +13,13 @@ const ShowCard = (props) =>{
     }, [dispatch, productId]);
     return (
         <div className="card">
-            {loading? <Card/>
+            {loading? (<Card
+            titulo={"CARGANDO"}
+            descripcion={"CARGANDO"}
+            precio={"CARGANDO"}
+            autor={"CARGANDO"}
+            portada={null}
+            back={null}/>)
             :
             error? <Card/>
             :(

@@ -23,7 +23,9 @@ const Homescreen = (props) =>{
     }, [dispatch])
     return(
         <div className="App-body">
-            <Sidebar/>
+            <Sidebar
+            logo_insta={'https://www.instagram.com/libros_donpancho/?hl=es-la'}
+            logo_facebook={''}/>
             <div className="books">
                 {loading? <LoadingBox></LoadingBox>
                 :

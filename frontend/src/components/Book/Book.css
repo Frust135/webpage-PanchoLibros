@@ -44,5 +44,8 @@
     .book p{
         color: white;
     }
+    .book{
+        width: 100%;
+    }
     
 }

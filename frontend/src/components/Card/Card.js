@@ -1,19 +1,21 @@
-import React from 'react';
+import React, {useState} from 'react';
 import ReactDom from 'react-dom';
 import './Card.css';
 import exit from '../../assets/Body/exit.svg';
 import {Link} from 'react-router-dom';
 
-const card = (props) =>{
+const Card = (props) =>{
+    const [cardImage, setCardImage] = useState(props.portada);
     let cardDesign=
         <div className="card">
             <div className="card-above">
-                <img src={props.portada} id="principal" alt="Portada"></img>
-                <img src={props.portada} className="little-image" alt="Portada pequeña"></img>
-                <img src={props.back} className="little-image" alt="Backside"></img>
+                <img src={exit} alt="Exit icon" id="exit-icon-mobile" onClick={props.click}></img>
+                <img src={cardImage} id="principal" alt="Portada"></img>
+                <img src={props.portada} onClick={() => setCardImage(props.portada)}  className="little-image" alt="Portada pequeña"></img>
+                <img src={props.back} onClick={() => setCardImage(props.back)} className="little-image" alt="Backside"></img>
             </div>
             <div className="card-text">
-                <img src={exit} alt="Exit icon" id="exit-icon" onClick={props.click}></img>
+                <img src={exit} alt="Exit icon" id="exit-icon-desktop" onClick={props.click}></img>
                 <p id="titulo">{props.titulo}</p>
                 <hr/>
                 <p id="autor">Autor: {props.autor}</p>
@@ -37,4 +39,4 @@ const card = (props) =>{
 }
 
 
-export default card;
+export default Card;

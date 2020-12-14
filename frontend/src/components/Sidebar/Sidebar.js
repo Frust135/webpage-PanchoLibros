@@ -21,7 +21,7 @@ const sidebar = (props) =>{
             <li className="editorial_movil"><a href={props.marea}>Marea</a></li>
             <li className="editorial_movil"><a href={props.rhm}>RHM</a></li>
         </ul>
-        <a href={props.logo_insta}>
+        <a href={props.logo_insta} target="blank">
             <img className="logo_redes" src={logo_insta} alt="Logo instagram">
             </img>
         </a>

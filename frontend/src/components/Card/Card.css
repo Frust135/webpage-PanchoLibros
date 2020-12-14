@@ -2,6 +2,10 @@
 /*
     CARTA
 */
+
+#exit-icon-mobile{
+    display: none;
+}
 .card{
     width: 100%;
     position: fixed;
@@ -11,14 +15,14 @@
     text-align: center;
     transition: all 0.3s ease 0s;
 }
-#exit-icon{
+#exit-icon-desktop, #exit-icon-mobile{
     width: 30px;
     float: right;
     margin-right: -50px;
     cursor: pointer;
     transition: filter 0.2s ease;
 }
-#exit-icon:hover{
+#exit-icon-desktop:hover, #exit-icon-mobile:hover{
     transition: filter 0.2s ease;
     filter: brightness(0) invert(.5);
     cursor: pointer;
@@ -125,10 +129,12 @@
     .card-text{
         height: 540px;
     }
-    
 }
 
 @media (max-width: 1410px){
+    .card{
+        top: 7rem;
+    }
 
     #descripcion{
         font-size: .8rem;
@@ -137,7 +143,7 @@
 
 @media (max-width: 1200px){
     .card{
-        top: 5%;
+        top: 2rem;
         left: 0%;
         
     }
@@ -183,7 +189,7 @@
         margin-left: 0px;
         margin-bottom: 1rem;
     }
-    #exit-icon{
+    #exit-icon-desktop{
         margin-right: -80px;
         cursor: pointer;
         position: -webkit-sticky;
@@ -191,15 +197,31 @@
         top: 0;
     }
 }
-
-@media (max-height:750px){
-    .card{
-        top: 8rem;
+@media (max-width: 600px){
+    #exit-icon-desktop{
+        display: none;
+    }
+    #exit-icon-mobile{
+        display: inline-block;
+        position: absolute;
+        right: 55px;
+        top: 2px;
+        
+    }
+    .card-text{
+        width: 90%;
+        padding: 1rem;
     }
 }
 
-@media (max-height:662px){
+@media (max-height:850px) and (max-width: 1200px){
     .card{
-        top: 6rem;
+        top: 2rem;
+    }
+}
+
+@media (max-height:662px) and (max-width: 1200px){
+    .card{
+        top: 1rem;
     }
 }
