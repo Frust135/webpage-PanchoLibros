@@ -68,11 +68,9 @@ p{
     }
     .sidebar{
         background: #ffffff;
-        position: absolute;
         bottom: 0;
         left: 0;
         width: 80%;
-        margin-left: 10%;
         height: 225px;
     }
     .editorial_movil{
