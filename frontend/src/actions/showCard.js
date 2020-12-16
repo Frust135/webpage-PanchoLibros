@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import {useDispatch, useSelector} from 'react-redux';
 import { detailsProduct } from '../actions/productActions';
 import Card from '../components/Card/Card';
+import EmptyCard from '../components/Card/EmptyCard';
 
 const ShowCard = (props) =>{
     const dispatch = useDispatch();
@@ -13,15 +14,9 @@ const ShowCard = (props) =>{
     }, [dispatch, productId]);
     return (
         <div className="card">
-            {loading? (<Card
-            titulo={"CARGANDO"}
-            descripcion={"CARGANDO"}
-            precio={"CARGANDO"}
-            autor={"CARGANDO"}
-            portada={null}
-            back={null}/>)
+            {loading? <EmptyCard/>
             :
-            error? <Card/>
+            error? <EmptyCard/>
             :(
           <Card 
           click={props.clickHandler}

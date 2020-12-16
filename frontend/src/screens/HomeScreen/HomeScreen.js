@@ -7,9 +7,8 @@ import Sidebar from '../../components/Sidebar/Sidebar';
 import Book from '../../components/Book/Book';
 import LoadingBox from '../../components/LoadingBox/LoadingBox';
 import ErrorBox from '../../components/ErrorBox/ErrorBox';
-import PageButton from '../../components/PageButton/PageButton';
+//import PageButton from '../../components/PageButton/PageButton';
 // REDUX
-
 import { listLibros } from '../../actions/productActions';
 
 const Homescreen = (props) =>{
@@ -47,12 +46,7 @@ const Homescreen = (props) =>{
                     
                 )))
                 }
-                <PageButton
-                 back={'#'}
-                 page={1}
-                forward={'#'}/>     
             </div>
-               
         </div>
     );
 }
