@@ -24,3 +24,21 @@
     padding-top: 3rem;
     text-align: center;
 }
+
+@media (max-width: 1124px){
+    .estanteria-vacia{
+        width: 70%;
+        transition: all 0.3s ease 0s;
+    }
+}
+
+@media (max-width: 650px){
+    .estanteria-vacia{
+        width: 80%;
+        transition: all 0.3s ease 0s;
+        font-size: 1.2rem;
+    }
+    .estanteria-vacia p{
+        padding-top: 2rem;
+    }
+}

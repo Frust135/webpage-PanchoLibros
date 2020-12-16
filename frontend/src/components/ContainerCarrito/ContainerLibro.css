@@ -27,14 +27,16 @@
     float: left;
     padding: .35rem 1rem;
 }
+#ContainerLibro-exit-mobile{
+    display: none;
+}
 
-
-#ContainerLibro-exit{
+#ContainerLibro-exit-desktop, #ContainerLibro-exit-mobile{
     width: 30px;
     float: right;
     padding: .2rem;
 }
-#ContainerLibro-exit:hover{
+#ContainerLibro-exit-desktop:hover, #ContainerLibro-exit-mobile:hover{
     transition: filter 0.2s ease;
     filter: brightness(0) invert(.5);
     cursor: pointer;
@@ -62,9 +64,19 @@
 }
 
 @media (max-width: 650px){
+    #ContainerLibro-exit-desktop{
+        display: none;
+    }
+    #ContainerLibro-exit-mobile{
+        display: inline-block;
+    }
     .ContainerLibro{
         width: 90%;
         transition: all 0.3s ease 0s;
+    }
+    .ContainerLibro-libro{
+        width: 100%;
+        border-radius: 6px 6px 0px 0px;
     }
     #containerTitulo{
         font-size: 1rem;
@@ -72,7 +84,16 @@
     .ContainerLibro-texto{
         font-size: .9rem;
     }
+    .ContainerLibro-precio{
+        clear: both;
+        display: block;
+        width: 100%;
+        border-radius: 0px 0px 6px 6px;
+        height: 50px;
+    }
     #containerPrecio{
         font-size: 1rem;
+        padding-top: 1rem;
+
     }
 }
