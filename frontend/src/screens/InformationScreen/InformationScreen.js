@@ -45,7 +45,7 @@ const InformationScreen = (props) =>{
             <div>
                 <label htmlFor="pago">MÉTODO DE PAGO</label>
                 <div className="paypal-pago">
-                    <input type="radio" id="paypal" value="PayPal" name ="metodo-pago" required checked onChange={(e) => setMetodoPago(e.target.value)}></input>
+                    <input type="radio" id="paypal" value="PayPal" name ="metodo-pago" required onChange={(e) => setMetodoPago(e.target.value)}></input>
                     <label id="paypal-lbl" htmlFor="paypal">PayPal</label>
                 </div>
                 <div className="webpay-pago">

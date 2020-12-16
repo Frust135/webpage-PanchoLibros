@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap');
+.ContainerLibro{
+    display: inline-block;
+    padding: 1rem;
+}
+
+.ContainerPrecio{
+    display: block;
+}
+.PagoScreen h1{
+    font-size: 2rem;
+    font-family: 'Libre Baskerville', serif;
+    color: white;
+}
+.PagoScreen-informacion{
+    background-color: white;
+    font-family: 'Libre Baskerville', serif;
+    text-align: center;
+    margin: 0 auto;
+    width: 40%;
+    border-radius: 6px;
+    transition: all 0.3s ease 0s;
+    padding: 1rem;
+}
+
+.PagoScreen-informacion hr{
+    border: 1px solid #808080;
+}
+
+@media (max-width: 1124px){
+    .PagoScreen h1{
+        font-size: 1.7rem;
+    }
+    .PagoScreen-informacion{
+        width: 70%;
+    }
+}
+
+@media (max-width: 650px){
+    .PagoScreen h1{
+        font-size: 1.5rem;
+    }
+    .PagoScreen-informacion{
+        width: 80%;
+    }
+}

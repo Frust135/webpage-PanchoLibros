@@ -2,7 +2,7 @@
 .InformationScreen{
     font-family: 'Libre Baskerville', serif;
     transition: all 0.3s ease 0s;
-    margin: 5rem 0rem;
+    margin: 0rem 0rem 4rem 0rem;
 }
 .InformationScreen-info{
     background-color: #dcbe8e;
