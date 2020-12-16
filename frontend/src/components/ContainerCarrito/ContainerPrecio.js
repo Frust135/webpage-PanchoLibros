@@ -8,7 +8,7 @@ const ContainerPrecio = (props) =>{
             <p id="ContainerPrecio-total">TOTAL</p>
             <p id="ContainerPrecio-cantidad">{props.cantidad} Libros</p>
             <p id="ContainerPrecio-precio">${props.preciototal}</p>
-            <Link to="/informacion"><button className="pagar" disabled={props.cantidad===0}> {props.texto} </button></Link>
+            <Link to={props.direccion}><button className="pagar" disabled={props.cantidad===0}> {props.texto} </button></Link>
         </div>
     );
 

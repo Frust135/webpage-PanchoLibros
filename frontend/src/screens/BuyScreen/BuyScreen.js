@@ -45,6 +45,7 @@ const Buyscreen = (props) =>{
             cantidad={cartItems.reduce((acumulador) => acumulador + 1 , 0)}
             preciototal={cartItems.reduce((acumulador, libro) => acumulador + libro.precio, 0)}
             texto={"Continuar"}
+            direccion={"/informacion"}
             />
         </div>
     );

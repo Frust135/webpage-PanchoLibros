@@ -45,7 +45,8 @@ const PagoScreen = (props) =>{
             <ContainerPrecio
             cantidad={cart.cartItems.reduce((acumulador) => acumulador + 1 , 0)}
             preciototal={cart.cartItems.reduce((acumulador, libro) => acumulador + libro.precio, 0)}
-            texto={"Pagar"}/>
+            texto={"Pagar"}
+            direccion={"#"}/>
             </div>
         </div>
     );
