@@ -18,7 +18,8 @@ const Card = (props) =>{
                 <img src={exit} alt="Exit icon" id="exit-icon-desktop" onClick={props.click}></img>
                 <p id="titulo">{props.titulo}</p>
                 <hr/>
-                <p id="autor">Autor: {props.autor}</p>
+                <p className="autor"><strong>Autor:</strong> {props.autor}</p>
+                <p className="autor"><strong>Editorial:</strong> {props.editorial}</p>
                 <p id="descripcion">{props.descripcion}</p>
                 <p id="precio">${props.precio}</p>
                 {

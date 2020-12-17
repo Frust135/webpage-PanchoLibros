@@ -27,7 +27,9 @@ const ShowCard = (props) =>{
           precio={product.precio}
           descripcion={product.descripcion}
           isbn={product.ISBN}
-          stock={product.stock}/>)
+          stock={product.stock}
+          editorial={product.editorial}/>)
+          
           }
         </div> 
     );
